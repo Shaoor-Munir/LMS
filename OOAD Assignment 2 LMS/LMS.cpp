@@ -2,6 +2,7 @@
 #include"User.h"
 #include"LibItem.h"
 #include"Book.h"
+#include"DVD.h"
 
 LMS::LMS()
 {
@@ -44,6 +45,24 @@ vector<Book*> LMS::author_search_book(string author)
 			if (((Book*) items[i])->get_author() == author)
 			{
 				temp.push_back((Book *)items[i]);
+			}
+		}
+	}
+
+	return temp;
+}
+
+vector<DVD*> LMS::category_search_dvd(string category)
+{
+	vector <DVD *> temp;
+
+	for (int i = 0; i < items.size(); i++)
+	{
+		if (items[i]->return_type() == "DVD")
+		{
+			if (((DVD *)items[i])->get_category() == category)
+			{
+				temp.push_back((DVD *)items[i]);
 			}
 		}
 	}

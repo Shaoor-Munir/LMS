@@ -23,7 +23,7 @@ public:
 	bool add_User(User *user);
 	LibItem * search_LibItem(string type, string name);
 	vector <Book *>author_search_book(string author);
-
+	vector <DVD *>category_search_dvd(string category);
 
 
 };
