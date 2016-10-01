@@ -12,10 +12,8 @@ class LoanItem;
 class User {
 
 protected:
-	static int count;
 	string name;
 	string user_name;
-	string id;
 	vector <LoanItem *> loans;
 
 public:

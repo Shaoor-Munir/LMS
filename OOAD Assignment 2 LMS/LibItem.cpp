@@ -3,10 +3,6 @@
 LibItem::LibItem(string name)
 {
 	this->name = name;
-	this->count++;
-	char *temp;
-	itoa(count, temp, 10);
-	this->id = temp;
 }
 
 void LibItem::add_loanItem(LoanItem * item)

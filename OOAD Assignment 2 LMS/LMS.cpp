@@ -18,7 +18,7 @@ bool LMS::add_User(User * user)
 {
 	for (int i = 0; i < users.size(); i++)
 	{
-		if (users[i]->get_username() == user->get_username)
+		if (users[i]->get_username() == user->get_username())
 			return false;
 	}
 	users.push_back(user);

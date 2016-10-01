@@ -11,9 +11,7 @@ class LoanItem;
 class LibItem {
 
 protected:
-	static int count;
 	string name;
-	string id;
 	vector <LoanItem*> loans;
 
 public:
