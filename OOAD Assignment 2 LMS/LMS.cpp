@@ -69,3 +69,31 @@ vector<DVD*> LMS::category_search_dvd(string category)
 
 	return temp;
 }
+
+bool LMS::remove_LibItem(LibItem * in)
+{
+	for (int i = 0; i < items.size(); i++)
+	{
+		if (items[i] == in)
+		{
+			items.erase(items.begin() + i);
+			return true;
+		}
+	}
+
+	return false;
+}
+
+bool LMS::remove_user(string username)
+{
+	for (int i = 0; i < users.size(); i++)
+	{
+		if (users[i]->get_username() == username)
+		{
+			users.erase(users.begin() + i);
+			return true;
+		}
+	}
+
+	return false;
+}

@@ -24,6 +24,7 @@ public:
 	LibItem * search_LibItem(string type, string name);
 	vector <Book *>author_search_book(string author);
 	vector <DVD *>category_search_dvd(string category);
-
+	bool remove_LibItem(LibItem * in);
+	bool remove_user(string username);
 
 };
