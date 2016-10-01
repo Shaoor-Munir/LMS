@@ -13,6 +13,6 @@ class Student : public User {
 
 
 public:
-	Student(string name);
+	Student(string name,string uname);
 	string return_type();
 };

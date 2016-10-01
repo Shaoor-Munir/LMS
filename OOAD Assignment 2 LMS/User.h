@@ -19,7 +19,7 @@ protected:
 	vector <LoanItem *> loans;
 
 public:
-	User(string name ="");
+	User(string name ="", string uname="");
 	void add_loanItem(LoanItem *item);
 	string get_username();
 	string get_name();
