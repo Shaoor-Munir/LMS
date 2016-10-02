@@ -12,10 +12,11 @@ class User;
 
 class LoanItem {
 	User * u;
-	LoanItem * item;
-	tm iDate;
-	tm rDate;
-
+	LibItem * item;
+	string iDate;
+	string rDate;
+	bool isReturned;
 public:
-	LoanItem(User *u = nullptr, LoanItem *item = nullptr);
+	LoanItem(User *u = nullptr, LibItem *item = nullptr);
+	void returnItem();
 };

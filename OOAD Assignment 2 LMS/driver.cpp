@@ -16,5 +16,7 @@ int main() {
 
 	library.add_User(u);
 
+	return 0;
+
 
 }

@@ -40,7 +40,7 @@ vector<Book*> LMS::author_search_book(string author)
 
 	for (int i = 0; i < items.size(); i++)
 	{
-		if (items[i]->return_type() == "Book")
+		if (items[i]->return_type() == "book")
 		{
 			if (((Book*) items[i])->get_author() == author)
 			{
@@ -58,7 +58,7 @@ vector<DVD*> LMS::category_search_dvd(string category)
 
 	for (int i = 0; i < items.size(); i++)
 	{
-		if (items[i]->return_type() == "DVD")
+		if (items[i]->return_type() == "dvd")
 		{
 			if (((DVD *)items[i])->get_category() == category)
 			{
