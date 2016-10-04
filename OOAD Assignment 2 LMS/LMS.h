@@ -22,6 +22,8 @@ public:
 	void add_LibItem(LibItem *item);
 	bool add_User(User *user);
 	LibItem * search_LibItem(string type, string name);
+	User * search_User(string type, string username);
+	vector <User *> search_user_by_name(string type, string name);
 	vector <Book *>author_search_book(string author);
 	vector <DVD *>category_search_dvd(string category);
 	bool remove_LibItem(LibItem * in);

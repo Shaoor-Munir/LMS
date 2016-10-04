@@ -34,6 +34,30 @@ LibItem * LMS::search_LibItem(string type, string name)
 	}
 }
 
+User * LMS::search_User(string type, string username)
+{
+	for (int i = 0; i < users.size(); i++)
+	{
+		if (users[i]->return_type == type && users[i]->get_username == username)
+			return users[i];
+	}
+
+	return nullptr;
+}
+
+vector<User*> LMS::search_user_by_name(string type, string name)
+{
+	vector<User *> temp;
+
+	for (int i = 0; i < users.size(); i++)
+	{
+		if (users[i]->return_type == type && users[i]->get_name == name)
+			temp.push_back(users[i]);
+	}
+
+	return temp;
+}
+
 vector<Book*> LMS::author_search_book(string author)
 {
 	vector <Book *> temp;
