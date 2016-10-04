@@ -38,7 +38,7 @@ User * LMS::search_User(string type, string username)
 {
 	for (int i = 0; i < users.size(); i++)
 	{
-		if (users[i]->return_type == type && users[i]->get_username == username)
+		if (users[i]->return_type() == type && users[i]->get_username() == username)
 			return users[i];
 	}
 
@@ -51,7 +51,7 @@ vector<User*> LMS::search_user_by_name(string type, string name)
 
 	for (int i = 0; i < users.size(); i++)
 	{
-		if (users[i]->return_type == type && users[i]->get_name == name)
+		if (users[i]->return_type() == type && users[i]->get_name() == name)
 			temp.push_back(users[i]);
 	}
 
