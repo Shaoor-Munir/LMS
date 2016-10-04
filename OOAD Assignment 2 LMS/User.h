@@ -22,5 +22,5 @@ public:
 	string get_username();
 	string get_name();
 	virtual string return_type() = 0;
-
+	vector<LoanItem *> return_pending_loans();
 };

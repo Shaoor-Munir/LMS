@@ -20,3 +20,8 @@ void LoanItem::returnItem()
 {
 	this->isReturned = true;
 }
+
+bool LoanItem::check_status()
+{
+	return isReturned;
+}

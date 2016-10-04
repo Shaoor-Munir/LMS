@@ -19,4 +19,5 @@ class LoanItem {
 public:
 	LoanItem(User *u = nullptr, LibItem *item = nullptr);
 	void returnItem();
+	bool check_status();
 };
